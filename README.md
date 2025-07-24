@@ -4,6 +4,6 @@ Build and run WPF apps using wine in one command (only tested on HelloWorld in G
 Instructions:
   1. Install Wine
   2. Install the 64bit Windows version of .NET SDK
-  3. Place dotnetbuild into /usr/local/bin/
-  4. Run dotnetbuild in your project directory
-  5. hope
+  3. Run "git clone https://github.com/qseftqseft/WPF-on-Linux-command.git && cd WPF-on-Linux-command/ && chmod +x dotnetbuild && sudo ./dotnetbuild"
+  5. Run "dotnetbuild" in your project directory
+  6. hope
