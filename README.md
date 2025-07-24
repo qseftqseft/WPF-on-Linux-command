@@ -3,5 +3,5 @@ Build and run WPF apps using wine in one command (only tested on HelloWorld in G
 
 Instructions:
   1. Place dotnetbuild into /usr/local/bin/
-  2. Run the command in your project directory
+  2. Run dotnetbuild in your project directory
   3. hope
