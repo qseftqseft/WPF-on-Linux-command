@@ -1,4 +1,4 @@
-# WPF-on-Linux-command
+# WPF on Linux command
 Build and run WPF apps using wine in one command (only tested on HelloWorld in Gentoo Linux)
 
 Instructions:
