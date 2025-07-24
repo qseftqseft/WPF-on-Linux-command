@@ -1,14 +1,13 @@
+cat <<'EOF' > /usr/local/bin/dotnetbuild
 #!/usr/bin/env bash
-
 cpath="$(pwd)"
 cdir="$(basename "$PWD")"
-
 wincpath="${cpath//\//\\}"
-winbpath="Z:${wincpath}\\${cdir}.csproj"
-
-echo "$cpath"
-echo "$cdir"
-echo "$wincpath"
-echo "$winbpath"
+winbpath="Z:\\${wincpath}\\${cdir}.csproj"
 wine cmd /c dotnet publish "$winbpath" -c Release -r win-x64 --self-contained false && echo "finished building"
-DOTNET_ROOT="~/.wine/drive_c/Program Files/dotnet" && wine "bin/Release/net8.0-windows/win-x64/publish/${cdir}.exe"
+DOTNET_ROOT="~/.wine/drive_c/Program Files/dotnet"
+wine "bin/Release/net8.0-windows/win-x64/publish/${cdir}.exe"
+EOF
+
+chmod +x /usr/local/bin/dotnetbuild
+echo "install complete"
