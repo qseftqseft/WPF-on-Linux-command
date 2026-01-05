@@ -11,5 +11,5 @@ Build and run WPF apps using wine in one command (only tested on [WPF Samples](h
   chmod +x dotnetbuild
   sudo ./dotnetbuild
   ```
-  5. Run ```dotnetbuild``` in your project directory (where the .csproj file is located)
+  5. Run ```dotnetbuild``` in your project directory (where the .csproj file is located) or specify the directory as the first argument
   6. hope
