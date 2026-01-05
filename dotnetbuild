@@ -1,5 +1,6 @@
 cat <<'EOF' > /usr/local/bin/dotnetbuild
 #!/usr/bin/env bash
+cd $1
 pnameg=$(find . -type f -name "*.csproj")
 pnameb="${pnameg:2}"
 pname="${pnameb::-7}"
