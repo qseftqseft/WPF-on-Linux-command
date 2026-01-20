@@ -9,7 +9,7 @@ wincpath="${cpath//\//\\}"
 winbpath="Z:\\${wincpath}\\${pname}.csproj"
 wine cmd /c dotnet publish "$winbpath" -c Release -r win-x64 --self-contained false && echo "finished building"
 DOTNET_ROOT="~/.wine/drive_c/Program Files/dotnet"
-wine "bin/Release/net8.0-windows/win-x64/publish/${pname}.exe"
+wine "bin/Release/net10.0-windows/win-x64/publish/${pname}.exe"
 EOF
 
 chmod +x /usr/local/bin/dotnetbuild
